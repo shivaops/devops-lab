@@ -129,7 +129,7 @@ These commands demonstrate how to check individual components. Run them from **`
 | NFS server | `vagrant ssh nfs-server -c "systemctl is-active nfs-server && showmount -e localhost"` | Service active and exports visible |
 | Docker | `vagrant ssh docker -c "docker --version && docker compose version && systemctl is-active docker"` | Docker, Compose, service |
 | Ansible | `vagrant ssh ansible -c "ansible --version"` | Ansible installed |
-| Jenkins | `vagrant ssh jenkins -c "systemctl is-active jenkins && ss -ltn" | grep ':8080'"` | Jenkins active and port 8080 listening |
+| Jenkins | `vagrant ssh jenkins -c "systemctl is-active jenkins && ss -ltn"' | grep ':8080'"` | Jenkins active and port 8080 listening |
 
 The intended Ingress LoadBalancer IP is **`172.16.0.100`**. Actual resource and service status must be confirmed from command output.
 
