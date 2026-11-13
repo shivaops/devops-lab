@@ -1,0 +1,13 @@
+# Runtime-generated files: never publish credentials or machine state
+secret/
+join-token-command.sh
+.vagrant/
+logs/
+*.log
+vagrant.zip
+# Common private keys and credentials
+*.pem
+*.key
+id_rsa
+id_ed25519
+.env

@@ -1,0 +1,7 @@
+172.16.0.11 kmaster
+172.16.0.12 kworker1
+172.16.0.13 kworker2
+172.16.0.14 docker
+172.16.0.15 jenkins
+172.16.0.16 ansible
+172.16.0.20 nfs-server
