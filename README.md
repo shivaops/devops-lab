@@ -1,16 +1,37 @@
 # ShivaOps DevOps Lab
 
-**ShivaOps DevOps Lab** is a fully automated local DevOps practice environment built with **Vagrant** and **Oracle VirtualBox**.
+## Fully Automated Local DevOps Environment — One Command Setup
 
-This lab creates multiple Ubuntu virtual machines on a Windows laptop and provisions commonly used DevOps tools such as **Jenkins, Docker, Ansible, NFS, Git Server, Kubernetes, Ingress Controller, and MetalLB**.
+**ShivaOps DevOps Lab** is a fully automated, multi-VM local DevOps practice environment built using **Vagrant** and **Oracle VirtualBox** on a Windows laptop.
 
-The goal is to provide a repeatable local DevOps lab for learning, practice, demos, and future CI/CD deployment scenarios.
+With just one command:
 
-This is the base platform. Later, I will use my **Smart Trip** application as the real Docker, Kubernetes, Jenkins, and CI/CD example on top of this same lab.
+```powershell
+vagrant up --provision
+```
 
-Watch my YouTube channel for **Smart Trip** application :
+Vagrant creates and configures the seven Ubuntu virtual machines, while Linux shell provisioning scripts automate the installation and configuration of the DevOps infrastructure.
 
-[Smart Trip – AI-Assisted Airline Booking Simulator -- Built with the Power of AI](https://www.youtube.com/playlist?list=PLYkaOC9kXnifZLmJb9NehgmZYqmCEaiQ6)
+**The automated provisioning process includes:**
+
+- Creating seven Ubuntu virtual machines with predefined hostnames, private IP addresses, and networking.
+- Installing and configuring **Jenkins, Docker, Ansible, and NFS** for CI/CD, containers, configuration management, and shared storage practice.
+- Setting up the **Kubernetes control plane and two worker nodes**, including automatically joining the workers to the cluster.
+- Configuring Kubernetes cluster networking and verifying node readiness.
+- Installing the **NGINX Ingress Controller** to route traffic to applications in Kubernetes.
+- Installing and configuring **MetalLB** to provide local LoadBalancer IP addresses.
+- Configuring **NFS shared storage** and Kubernetes storage provisioning for persistent application data.
+- Preparing the lab for future application deployments, Jenkins pipelines, Docker, Kubernetes, and CI/CD demonstrations.
+
+The goal is to provide a **repeatable, hands-on DevOps lab** for learning, experimentation, demonstrations, troubleshooting, and future CI/CD deployment scenarios. The same Vagrant configuration and shell scripts can be used to rebuild the environment without manually repeating each setup task.
+
+This is the **base DevOps infrastructure platform**. In a future demonstration, I plan to use my **Smart Trip — AI-Assisted Airline Booking Simulator** as a real application for Docker, Kubernetes, Jenkins, and end-to-end CI/CD workflows on this lab.
+
+**Watch the DevOps Lab demonstration:** [ShivaOps DevOps Lab — One Command Setup](https://youtu.be/xB-PuEIRJpQ)
+
+**Watch the Smart Trip application series:** [Smart Trip — AI-Assisted Airline Booking Simulator — Built with the Power of AI](https://www.youtube.com/playlist?list=PLYkaOC9kXnifZLmJb9NehgmZYqmCEaiQ6)
+
+**ShivaOps Portfolio:** [https://shivaops.github.io/](https://shivaops.github.io/)
 
 ---
 
